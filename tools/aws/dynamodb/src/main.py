@@ -9,13 +9,26 @@ def main(ctx):
         print(ctx.get_help())
 
 
-@main.command(help='標準出力で指定した環境に存在するdynamodbテーブルを全て表示します')
+@main.command(help='display to dynamodb tables')
 @click.option('--profile', '-p', default='default', help='profileを指定します。')
 def print_table_name(profile):
     dynamo = DynamoDB(profile)
     table_list = dynamo.get_table_list()
     print("********************************************************************")
-    print(table_list)
+    for table_name in table_list:
+        print(table_name)
+    print("********************************************************************")
+
+
+@main.command(help='display to dynamodb tables delete command')
+@click.option('--profile', '-p', default='default', help='profileを指定します。')
+def make_delete_table_cmd(profile):
+    dynamo = DynamoDB(profile)
+    table_list = dynamo.get_table_list()
+
+    print("********************************************************************")
+    for table_name in table_list:
+        print(f"aws dynamodb delete-table --table-name {table_name} --profile {profile}")
     print("********************************************************************")
 
 
