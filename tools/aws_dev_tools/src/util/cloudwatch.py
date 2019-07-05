@@ -31,3 +31,28 @@ class Cloudwatch:
             Statistics=["Maximum"]
         )
         return response
+
+    def get_sqs_message_sent_metrics(self, queue_name, start_time=None, end_time=None):
+        """
+        対象環境のdynamodbのテーブル名を全て取得します。
+        :return: result
+        """
+        if not start_time:
+            start_time = _time.get_how_many_days_ago(5)
+
+        if not end_time:
+            end_time = _time.get_now()
+
+        response = self.cloudwatch.get_metric_statistics(
+            Namespace="AWS/SQS",
+            MetricName="NumberOfMessagesSent",
+            Dimensions=[{
+                "Name": "QueueName",
+                "Value": queue_name
+            }],
+            StartTime=start_time,
+            EndTime=end_time,
+            Period=1800,
+            Statistics=["Sum"]
+        )
+        return response
