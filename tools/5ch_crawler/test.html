@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="５ちゃんねるスレタイ検索は、5ch.netやbbspink.comの最新のスレッドタイトルを検索できます。" name="description"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>au - 5ちゃんねるスレタイ検索</title>
+    <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+    <link href="/css/all.css" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="//img.5ch.net/assets/favicon.ico" rel="shortcut icon"/>
+    <script src="/js/all.js"></script>
+</head>
+<body class="find find_search">
+<div class="container container-full margin-bottom-10px">
+    <div class="row searchbar">
+        <div class="hidden-lg hidden-md col-sm-12 col-xs-12 searchbar_container margin-bottom-0 text-center">
+            <a class="searchbar_link" href="./"><img class="searchbar_link_image"
+                                                     src="//penguin.5ch.net/images/5ch_logo.png"/></a>
+        </div>
+        <div class="hidden-lg hidden-md col-sm-12 col-xs-12 searchbar_container">
+            <form action="/search" class="searchform" method="GET">
+                <div class="input-group searchform_input-group"><a class="searchform_input-close hidden" href="#"><i
+                        class="fa fa-close"></i></a><input class="form-control clear-box-shadow" name="q"
+                                                           placeholder="キーワードを入力" type="text" value="au"/><span
+                        class="input-group-btn"><button class="btn btn-primary" type="submit"><i
+                        class="fa fa-search"></i>検索</button></span></div>
+            </form>
+        </div>
+        <div class="col-lg-12 col-md-12 hidden-sm hidden-xs searchbar_container text-left">
+            <a class="searchbar_link" href="./"><img class="searchbar_link_image"
+                                                     src="//penguin.5ch.net/images/5ch_logo.png"/></a>
+            <form action="/search" class="form-inline searchform" method="GET">
+                <div class="input-group searchform_input-group"><a class="searchform_input-close hidden" href="#"><i
+                        class="fa fa-close"></i></a><input class="form-control clear-box-shadow searchbar-text-input-pc"
+                                                           name="q" placeholder="キーワードを入力" type="text" value="au"/><span
+                        class="input-group-btn"><button class="btn btn-primary" type="submit"><i
+                        class="fa fa-search"></i>検索</button></span></div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container container-search">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 hidden-12 hidden-12 margin-bottom-10px">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" id="js-mainview">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 toolbox margin-bottom-10px hidden" id="js-toolbox">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <div class="toolbox_container">
+                        <div class="toolbox_container_title">サイトで絞り込む</div>
+                        <a class="toolbox_container_link active" href="#">すべて</a><a class="toolbox_container_link"
+                                                                                    href="#">5ch.netのみ</a><a
+                            class="toolbox_container_link" href="#">bbspink.comのみ</a></div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <div class="toolbox_container">
+                        <div class="toolbox_container_title">結果の並び順</div>
+                        <a class="toolbox_container_link active" href="#">勢い順</a><a class="toolbox_container_link"
+                                                                                    href="#">最新の書込順</a><a
+                            class="toolbox_container_link" href="#">書込数順</a><a class="toolbox_container_link" href="#">最新スレ順</a>
+                        <a class="toolbox_container_link" href="#">最古スレ順</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
+            </div>
+            <div class="list">
+                <div class="list_line">
+                    <a class="list_line_link" href="http://rio2016.5ch.net/test/read.cgi/ebooks/1523960628">
+                        <div class="list_line_link_title">【読み放題】auブックパス 3冊目【アラカルト購入】 (198)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://rio2016.5ch.net/ebooks/">電子書籍</a></div>
+                        <div class="list_line_info_container">2019年07月11日 00:26</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.4/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://lavender.5ch.net/test/read.cgi/phs/1562666588">
+                        <div class="list_line_link_title">【東日本】au新規･買増一括情報 18 (1)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://lavender.5ch.net/phs/">携帯・ＰＨＳ</a></div>
+                        <div class="list_line_info_container">2019年07月09日 19:03</div>
+                        <div class="list_line_info_container list_line_info_container-danger">1.0/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://asahi.5ch.net/test/read.cgi/newsplus/1562568122">
+                        <div class="list_line_link_title">【でんわ】auがプリペイド携帯電話サービス「ぷりペイド」を21年12月で終了 (50)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://asahi.5ch.net/newsplus/">ニュース速報+</a></div>
+                        <div class="list_line_info_container">2019年07月09日 10:57</div>
+                        <div class="list_line_info_container list_line_info_container-danger">62.3/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://mao.5ch.net/test/read.cgi/nida/1561016629">
+                        <div class="list_line_link_title">火病（在日ﾈｶﾏﾝ）千葉　au　しねよﾌﾟｹﾞﾗ (50)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://mao.5ch.net/nida/">ニダー</a></div>
+                        <div class="list_line_info_container">2019年07月08日 08:07</div>
+                        <div class="list_line_info_container list_line_info_container-danger">2.8/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://mao.5ch.net/test/read.cgi/nida/1558720802">
+                        <div class="list_line_link_title">千葉のau回線ﾈｯｶﾏ~ﾝ在日ﾈｶﾏﾝﾈｯｶﾏ~ﾝ● (74)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://mao.5ch.net/nida/">ニダー</a></div>
+                        <div class="list_line_info_container">2019年07月08日 08:07</div>
+                        <div class="list_line_info_container list_line_info_container-danger">1.7/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://mao.5ch.net/test/read.cgi/wom/1560534850">
+                        <div class="list_line_link_title">au★二代目在日田平こと千葉県の在日ﾈｶﾏﾝ Part.2 (965)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://mao.5ch.net/wom/">女性</a></div>
+                        <div class="list_line_info_container">2019年07月08日 07:42</div>
+                        <div class="list_line_info_container list_line_info_container-danger">41.6/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://lavender.5ch.net/test/read.cgi/phs/1561799106">
+                        <div class="list_line_link_title">auスマートパスプレミアム Part.40 (241)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://lavender.5ch.net/phs/">携帯・ＰＨＳ</a></div>
+                        <div class="list_line_info_container">2019年07月08日 07:38</div>
+                        <div class="list_line_info_container list_line_info_container-danger">28.1/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://egg.5ch.net/test/read.cgi/hikari/1556269456">
+                        <div class="list_line_link_title">【au】KDDIまとめてオフィス4【ブラック企業】 (8)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://egg.5ch.net/hikari/">光通信</a></div>
+                        <div class="list_line_info_container">2019年07月08日 03:39</div>
+                        <div class="list_line_info_container list_line_info_container-danger">8.0/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://hayabusa9.5ch.net/test/read.cgi/news/1562492005">
+                        <div class="list_line_link_title">auプリペイド21年１２月にサービス終了 (44)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://hayabusa9.5ch.net/news/">ニュース速報</a></div>
+                        <div class="list_line_info_container">2019年07月07日 20:42</div>
+                        <div class="list_line_info_container list_line_info_container-danger">490.5/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://krsw.5ch.net/test/read.cgi/spsaloon/1452658158">
+                        <div class="list_line_link_title">auスマホ交換プログラム総合スレ (42)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://krsw.5ch.net/spsaloon/">スマホサロン</a></div>
+                        <div class="list_line_info_container">2019年07月07日 16:12</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.0/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://mevius.5ch.net/test/read.cgi/antispam/1349922977">
+                        <div class="list_line_link_title">【au限定】迷惑メールおまかせ規制レポート (540)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://mevius.5ch.net/antispam/">架空請求・spam</a></div>
+                        <div class="list_line_info_container">2019年07月07日 09:35</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.2/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://egg.5ch.net/test/read.cgi/android/1331273357">
+                        <div class="list_line_link_title">【オニギリ堂】au HTC EVO WiMAX ISW11HT Part70 (75)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://egg.5ch.net/android/">Android</a></div>
+                        <div class="list_line_info_container">2019年07月05日 20:36</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.0/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://lavender.5ch.net/test/read.cgi/keitai/1391374247">
+                        <div class="list_line_link_title">au WIN W61CA by CASIO Part28 (398)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://lavender.5ch.net/keitai/">携帯機種</a></div>
+                        <div class="list_line_info_container">2019年07月02日 16:32</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.2/日</div>
+                    </div>
+                </div>
+
+                <div class="list_line">
+                    <a class="list_line_link" href="http://rio2016.5ch.net/test/read.cgi/entrance2/1366087884">
+                        <div class="list_line_link_title">au・DION軍 (au one net 規制) ★ サイド208 (941)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://rio2016.5ch.net/entrance2/">ﾗｳﾝｼﾞｸﾗｼｯｸ</a></div>
+                        <div class="list_line_info_container">2019年07月01日 18:17</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.4/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://rio2016.5ch.net/test/read.cgi/credit/1561481914">
+                        <div class="list_line_link_title">au WALLET クレジットカード 28枚目 (16)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://rio2016.5ch.net/credit/">クレジット</a></div>
+                        <div class="list_line_info_container">2019年06月29日 01:31</div>
+                        <div class="list_line_info_container list_line_info_container-danger">5.4/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://lavender.5ch.net/test/read.cgi/keitai/1278488837">
+                        <div class="list_line_link_title">au EXILIMケータイ CA004 byCASIO part4 (1002)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://lavender.5ch.net/keitai/">携帯機種</a></div>
+                        <div class="list_line_info_container">2019年06月28日 16:26</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.3/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://lavender.5ch.net/test/read.cgi/keitai/1331039443">
+                        <div class="list_line_link_title">au WIN W52H by HITACHI Part25 (691)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://lavender.5ch.net/keitai/">携帯機種</a></div>
+                        <div class="list_line_info_container">2019年06月19日 21:36</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.3/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://lavender.5ch.net/test/read.cgi/keitai/1387480918">
+                        <div class="list_line_link_title">au URBANO AFFARE SOY05 by Sony Ericsson stage 9 (880)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://lavender.5ch.net/keitai/">携帯機種</a></div>
+                        <div class="list_line_info_container">2019年06月14日 03:32</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.4/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://lavender.5ch.net/test/read.cgi/keitai/1391440694">
+                        <div class="list_line_link_title">au あんしんGPS KYS11 part1 (436)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://lavender.5ch.net/keitai/">携帯機種</a></div>
+                        <div class="list_line_info_container">2019年06月13日 09:20</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.2/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://rio2016.5ch.net/test/read.cgi/ebooks/1294507863">
+                        <div class="list_line_link_title">au biblio Leaf SP02 part2 (900)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://rio2016.5ch.net/ebooks/">電子書籍</a></div>
+                        <div class="list_line_info_container">2019年06月06日 09:53</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.3/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://hayabusa9.5ch.net/test/read.cgi/mnewsplus/1559258764">
+                        <div class="list_line_link_title">【テレビ】auのCM『三太郎』“親指姫”の正体は池田エライザ　実は２０１７年末から登場 (556)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://hayabusa9.5ch.net/mnewsplus/">芸スポ速報+</a></div>
+                        <div class="list_line_info_container">2019年06月01日 21:42</div>
+                        <div class="list_line_info_container list_line_info_container-danger">357.9/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://hebi.5ch.net/test/read.cgi/news4vip/1558647069">
+                        <div class="list_line_link_title">今変えるなら!!auのスマホ何がいい? (3)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://hebi.5ch.net/news4vip/">ニュー速VIP</a></div>
+                        <div class="list_line_info_container">2019年05月24日 06:43</div>
+                        <div class="list_line_info_container list_line_info_container-danger">3.0/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://egg.5ch.net/test/read.cgi/bizplus/1555908226">
+                        <div class="list_line_link_title">【MVNO】LINEモバイルがau回線でのサービスを開始、キャンペーンも (23)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://egg.5ch.net/bizplus/">ビジネスnews+</a></div>
+                        <div class="list_line_info_container">2019年05月23日 04:52</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.8/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://asahi.5ch.net/test/read.cgi/newsplus/1558522588">
+                        <div class="list_line_link_title">【日本】ドコモ・au・SB・UQがHuawei発売延期 ★4 (600)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://asahi.5ch.net/newsplus/">ニュース速報+</a></div>
+                        <div class="list_line_info_container">2019年05月22日 22:57</div>
+                        <div class="list_line_info_container list_line_info_container-danger">4771.7/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://asahi.5ch.net/test/read.cgi/newsplus/1558515513">
+                        <div class="list_line_link_title">【日本】ドコモ・au・SB・UQがHuawei発売延期 ★3 (1002)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://asahi.5ch.net/newsplus/">ニュース速報+</a></div>
+                        <div class="list_line_info_container">2019年05月22日 19:25</div>
+                        <div class="list_line_info_container list_line_info_container-danger">16600.7/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://asahi.5ch.net/test/read.cgi/newsplus/1558509100">
+                        <div class="list_line_link_title">【日本】ドコモ・au・SB・UQがHuawei発売延期 ★2 (1002)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://asahi.5ch.net/newsplus/">ニュース速報+</a></div>
+                        <div class="list_line_info_container">2019年05月22日 17:57</div>
+                        <div class="list_line_info_container list_line_info_container-danger">13670.1/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://asahi.5ch.net/test/read.cgi/newsplus/1558503801">
+                        <div class="list_line_link_title">【Huawei】ソフトバンクとKDDI（au）、予定していたファーウェイ製品の発売を延期★2 (1002)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://asahi.5ch.net/newsplus/">ニュース速報+</a></div>
+                        <div class="list_line_info_container">2019年05月22日 16:13</div>
+                        <div class="list_line_info_container list_line_info_container-danger">16049.8/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://asahi.5ch.net/test/read.cgi/newsplus/1558499748">
+                        <div class="list_line_link_title">【Huawei】ソフトバンクとKDDI（au）、予定していたファーウェイ製品の発売を延期 (1002)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://asahi.5ch.net/newsplus/">ニュース速報+</a></div>
+                        <div class="list_line_info_container">2019年05月22日 14:43</div>
+                        <div class="list_line_info_container list_line_info_container-danger">21218.8/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://asahi.5ch.net/test/read.cgi/newsplus/1558236280">
+                        <div class="list_line_link_title">【docomo･softbank･au】菅官房長官「大手三社は競争が働いていない」★2 (640)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://asahi.5ch.net/newsplus/">ニュース速報+</a></div>
+                        <div class="list_line_info_container">2019年05月22日 13:03</div>
+                        <div class="list_line_info_container list_line_info_container-danger">211.5/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://egg.5ch.net/test/read.cgi/bizplus/1557763145">
+                        <div class="list_line_link_title">【Unlimited】auがデータ容量無制限の「au
+                            データMAXプラン」月8980円　ただしテザリング使用の場合は20GB/月の制限あり (178)
+                        </div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://egg.5ch.net/bizplus/">ビジネスnews+</a></div>
+                        <div class="list_line_info_container">2019年05月21日 12:56</div>
+                        <div class="list_line_info_container list_line_info_container-danger">23.7/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://egg.5ch.net/test/read.cgi/bizplus/1557763334">
+                        <div class="list_line_link_title">【携帯】au、「auフラットプラン7プラス」発表　月額5480円　7GB/月に加えSNS無料 (17)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://egg.5ch.net/bizplus/">ビジネスnews+</a></div>
+                        <div class="list_line_info_container">2019年05月19日 22:12</div>
+                        <div class="list_line_info_container list_line_info_container-danger">2.9/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://lavender.5ch.net/test/read.cgi/keitai/1300143917">
+                        <div class="list_line_link_title">au URBANO BARONE SOY03 by Sony Ericsson stage 5 (822)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://lavender.5ch.net/keitai/">携帯機種</a></div>
+                        <div class="list_line_info_container">2019年05月19日 11:21</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.3/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://egg.5ch.net/test/read.cgi/bizplus/1557714109">
+                        <div class="list_line_link_title">【スマホ】auの夏モデルが登場　「Xperia 1」「Galaxy S10」「TORQUE G04」など9機種
+                            (192)
+                        </div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://egg.5ch.net/bizplus/">ビジネスnews+</a></div>
+                        <div class="list_line_info_container">2019年05月18日 21:19</div>
+                        <div class="list_line_info_container list_line_info_container-danger">35.5/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://hayabusa9.5ch.net/test/read.cgi/news/1557910982">
+                        <div class="list_line_link_title">KDDIがブランドスローガン発表したけど「auの庭で」これは意味不明だったな (82)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://hayabusa9.5ch.net/news/">ニュース速報</a></div>
+                        <div class="list_line_info_container">2019年05月17日 07:49</div>
+                        <div class="list_line_info_container list_line_info_container-danger">52.1/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://lavender.5ch.net/test/read.cgi/keitai/1296238677">
+                        <div class="list_line_link_title">au WIN G&#39;zOne CA002 by CASIO Part8 (771)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://lavender.5ch.net/keitai/">携帯機種</a></div>
+                        <div class="list_line_info_container">2019年05月16日 06:46</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.3/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://rio2016.5ch.net/test/read.cgi/credit/1556992619">
+                        <div class="list_line_link_title">au PAY part5 (606)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://rio2016.5ch.net/credit/">クレジット</a></div>
+                        <div class="list_line_info_container">2019年05月15日 04:37</div>
+                        <div class="list_line_info_container list_line_info_container-danger">60.2/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://rio2016.5ch.net/test/read.cgi/credit/1554472019">
+                        <div class="list_line_link_title">【Masterプリペイド】au WALLET カード★73 (883)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://rio2016.5ch.net/credit/">クレジット</a></div>
+                        <div class="list_line_info_container">2019年05月15日 04:20</div>
+                        <div class="list_line_info_container list_line_info_container-danger">22.5/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://rio2016.5ch.net/test/read.cgi/credit/1550009812">
+                        <div class="list_line_link_title">au WALLET クレジットカード 27枚目 (602)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://rio2016.5ch.net/credit/">クレジット</a></div>
+                        <div class="list_line_info_container">2019年05月14日 23:26</div>
+                        <div class="list_line_info_container list_line_info_container-danger">6.6/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://hebi.5ch.net/test/read.cgi/news4vip/1557814295">
+                        <div class="list_line_link_title">au安くなんの？ (5)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://hebi.5ch.net/news4vip/">ニュー速VIP</a></div>
+                        <div class="list_line_info_container">2019年05月14日 15:30</div>
+                        <div class="list_line_info_container list_line_info_container-danger">5.0/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://hayabusa9.5ch.net/test/read.cgi/news/1557714323">
+                        <div class="list_line_link_title">au夏モデルが登場！お前らもついにgalaxyデビューか (436)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://hayabusa9.5ch.net/news/">ニュース速報</a></div>
+                        <div class="list_line_info_container">2019年05月14日 10:38</div>
+                        <div class="list_line_info_container list_line_info_container-danger">450.6/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://matsuri.5ch.net/test/read.cgi/morningcoffee/1557720214">
+                        <div class="list_line_link_title">【速報】日本初、auが容量無制限プランを発表　「au データMAXプラン」税別8980円 (45)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://matsuri.5ch.net/morningcoffee/">モ娘（狼）</a></div>
+                        <div class="list_line_info_container">2019年05月13日 21:25</div>
+                        <div class="list_line_info_container list_line_info_container-danger">129.0/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://matsuri.5ch.net/test/read.cgi/morningcoffee/1557719811">
+                        <div class="list_line_link_title">au KDDIがデータ通信料について最大4割の値下げ発表 ※ 広瀬すず(大石鈴華)
+                            広瀬アリス(大石麻由子)どちらも4割引に！！ (23)
+                        </div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://matsuri.5ch.net/morningcoffee/">モ娘（狼）</a></div>
+                        <div class="list_line_info_container">2019年05月13日 20:47</div>
+                        <div class="list_line_info_container list_line_info_container-danger">70.4/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://lavender.5ch.net/test/read.cgi/phs/1557714200">
+                        <div class="list_line_link_title">auデータMAXプラン　フラットプラン7プラン (1)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://lavender.5ch.net/phs/">携帯・ＰＨＳ</a></div>
+                        <div class="list_line_info_container">2019年05月13日 11:23</div>
+                        <div class="list_line_info_container list_line_info_container-danger">1.0/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://egg.5ch.net/test/read.cgi/bizplus/1554345896">
+                        <div class="list_line_link_title">【決済】「au Pay」始動　三太郎の日は26%還元、チャージでも10%還元 (167)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://egg.5ch.net/bizplus/">ビジネスnews+</a></div>
+                        <div class="list_line_info_container">2019年05月12日 18:10</div>
+                        <div class="list_line_info_container list_line_info_container-danger">4.4/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://lavender.5ch.net/test/read.cgi/phs/1556868715">
+                        <div class="list_line_link_title">【東日本】au新規･買増一括情報 8 (783)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://lavender.5ch.net/phs/">携帯・ＰＨＳ</a></div>
+                        <div class="list_line_info_container">2019年05月10日 23:42</div>
+                        <div class="list_line_info_container list_line_info_container-danger">107.3/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://mao.5ch.net/test/read.cgi/isp/1555336299">
+                        <div class="list_line_link_title">KDDI auひかり 36 (140)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://mao.5ch.net/isp/">プロバイダー</a></div>
+                        <div class="list_line_info_container">2019年05月10日 20:25</div>
+                        <div class="list_line_info_container list_line_info_container-danger">5.6/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://mao.5ch.net/test/read.cgi/isp/1555749373">
+                        <div class="list_line_link_title">【au MVNO】UQ mobile 18枚目 (198)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://mao.5ch.net/isp/">プロバイダー</a></div>
+                        <div class="list_line_info_container">2019年05月10日 16:35</div>
+                        <div class="list_line_info_container list_line_info_container-danger">9.9/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://krsw.5ch.net/test/read.cgi/spsaloon/1520446345">
+                        <div class="list_line_link_title">au, softbank 月額料金高い上にテザリングで＋525円、格安SIMは安い上にデザリング料込み (14)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://krsw.5ch.net/spsaloon/">スマホサロン</a></div>
+                        <div class="list_line_info_container">2019年05月10日 15:12</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.0/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://lavender.5ch.net/test/read.cgi/keitai/1362195021">
+                        <div class="list_line_link_title">au WIN W63K by 京セラ　Part7 (746)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://lavender.5ch.net/keitai/">携帯機種</a></div>
+                        <div class="list_line_info_container">2019年05月08日 00:38</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.3/日</div>
+                    </div>
+                </div>
+                <div class="list_line">
+                    <a class="list_line_link" href="http://mao.5ch.net/test/read.cgi/isp/1549501630">
+                        <div class="list_line_link_title">au回線MVNO総合スレ Part2 (37)</div>
+                    </a>
+                    <div class="list_line_info">
+                        <div class="list_line_info_container list_line_info_container-board"><a
+                                href="http://mao.5ch.net/isp/">プロバイダー</a></div>
+                        <div class="list_line_info_container">2019年05月05日 21:27</div>
+                        <div class="list_line_info_container list_line_info_container-danger">0.4/日</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 hidden-sm hidden-xs padding-zero">
+                <div class="col-lg-6 col-md-12 padding-zero">
+                    <div class="supporter text-center">
+                        <div class="supporter_body js-ads_pc_left_300x250"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 hidden-md padding-zero">
+                    <div class="supporter text-center">
+                        <div class="supporter_body js-ads_pc_right_300x250"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+                <div class="supporter text-center">
+                    <div class="supporter_body js-ads_sp_300x250"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-5 hidden-sm hidden-xs text-center" id="js-ads-scrollview">
+            <div class="supporter supporter-top supporter-absolute">
+                <div class="supporter_body js-ads_pc_160x600"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container container-lg-less">
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+            <div class="footer margin-bottom-10px">
+                <div class="footer_links"><a href="http://www.5ch.net/">5ちゃんねる</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div aria-labelledby="helpModalLabel" class="modal fade" id="helpModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span>
+                </button>
+                <h4 class="modal-title" id="helpModalLabel">ヘルプ</h4></div>
+            <div class="modal-body">
+                <p>・スペース → AND</p>
+                <p>・AND → 両方を含む</p>
+                <p>・OR → どちらかを含む</p>
+                <p>・NOT → 含まない</p>
+                <p>・" で囲む → スペースも含めた検索</p>
+                <p>・○○板 → 板名を部分一致で検索</p>
+                <p>・@○○ → 板名を部分一致で検索</p>
+                <p>・板名は板IDか板タイトルが検索対象になります</p>
+                <p>・例: スマホアプリ板の板IDは「applism」、板タイトルが「スマホアプリ」のため、 @スマホ @アプリ @apliのどれでもヒットします</p>
+                <p>・NOTで特定の板からの検索を除外できます</p>
+                <p>・例: "経済 NOT @ニュース" →ニュースを含む板以外からの検索</p>
+                <p>・板をORで指定することはできません</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-info" data-dismiss="modal" type="button">閉じる</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
